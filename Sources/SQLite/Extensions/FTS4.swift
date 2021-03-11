@@ -22,6 +22,8 @@
 // THE SOFTWARE.
 //
 
+#if ENABLE_APPLE_EXTENSIONS
+
 #if SWIFT_PACKAGE
 import SQLiteObjc
 #endif
@@ -350,3 +352,5 @@ open class FTS4Config : FTSConfig {
         return options
     }
 }
+
+#endif

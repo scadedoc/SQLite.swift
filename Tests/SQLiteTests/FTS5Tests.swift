@@ -1,3 +1,6 @@
+
+#if ENABLE_APPLE_EXTENSIONS
+
 import XCTest
 import SQLite
 
@@ -122,3 +125,5 @@ class FTS5Tests: XCTestCase {
         return virtualTable.create(.FTS5(config))
     }
 }
+
+#endif

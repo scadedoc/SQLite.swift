@@ -22,6 +22,8 @@
 // THE SOFTWARE.
 //
 
+#if ENABLE_APPLE_EXTENSIONS
+
 extension Module {
     public static func FTS5(_ config: FTS5Config) -> Module {
         return Module(name: "fts5", arguments: config.arguments())
@@ -95,3 +97,5 @@ open class FTS5Config : FTSConfig {
         }
     }
 }
+
+#endif

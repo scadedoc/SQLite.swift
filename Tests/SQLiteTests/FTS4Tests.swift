@@ -1,3 +1,6 @@
+
+#if ENABLE_APPLE_EXTENSIONS
+
 import XCTest
 import SQLite
 
@@ -206,3 +209,5 @@ class FTS4IntegrationTests : SQLiteTestCase {
     }
 #endif
 }
+
+#endif
